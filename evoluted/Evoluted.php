@@ -95,6 +95,7 @@ final class Evoluted
 				$count = count($matches);
 
 				if ($count > 0) {
+					// using bitwise operator instead of foreach
 					$points += 1 << ($count - 1); // 2^(count - 1)
 				}
 			}
