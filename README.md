@@ -1,22 +1,21 @@
 # Evoluted
 
-Evoluted is a PHP CLI tool for parsing card game data and computing scores in the Evoluted technical test as developed by [Anthony Osawere](https://osawere.com).
+Evoluted is a PHP CLI tool for parsing card game data and computing scores, developed by [Anthony Osawere](https://osawere.com).
 
-## Testing
+## Features
 
-The unit tests is written using PEST.
+- Parses input files describing card games
+- Calculates cumulative points based on matching cards
+- Provides CLI scripts for data processing
+- Fully unit tested with Pest PHP testing framework
 
-### Requirements
+## Requirements
 
 - PHP 8.4.10 or higher
 - Composer
-- PHP Pest
-- Input.txt (file containing card data)
+- `input.txt` file containing card data (located in `storage/` directory)
 
-### Setup Instructions
-
-Clone the repository or download the zip file:
-The setup is similar to the following directory structure:
+## Project Structure
 
 .
 ├── .gitignore
@@ -25,30 +24,33 @@ The setup is similar to the following directory structure:
 ├── phpunit.xml
 ├── README.md
 ├── bin/
-│   └── point.php
-│   └── reader.php
+│ ├── point.php
+│ └── reader.php
 ├── evoluted/
-│   └── Helper/
-│      └── File.php
-│      └── Json.php
-│      └── Publish.php
-│   └── Evoluted.php
-└── storage/
-│   └── input.txt
-└── tests/
-│   └── Helper/
-│      └── Publish.php
-│   └── EvolutedTest.php
+│ ├── Helper/
+│ │ ├── File.php
+│ │ ├── Json.php
+│ │ └── Publish.php
+│ └── Evoluted.php
+├── storage/
+│ └── input.txt
+├── tests/
+│ ├── Helper/
+│ │ └── Publish.php
+│ └── EvolutedTest.php
 └── Pest.php
 
-### Install Composer:
+## Installation
 
-Navigate to the root directory of the project in your terminal and run:
+Clone the repository, install dependencies and run unit test:
 
-`composer install && composer test`
+- git clone https://github.com/osawereao/evoluted.git
+- run `composer install`
+- run `composer test`  *(for PEST Unit Testing)*
 
-This command will...
+## Usage
 
-* Download PHPUnit and PEST, and all its dependencies
-* Set up the autoloader
-* And run Unit Test (6)
+- Place your card data file as input.txt inside the storage/ directory.
+- From the root directory with your CLI tool:
+  - run `php bin/reader.php` *(for script 1)* OR
+  - run `php bin/point.php` *(for script 2)*
