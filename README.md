@@ -15,30 +15,7 @@ Evoluted is a PHP CLI tool for parsing card game data and computing scores, deve
 - Composer
 - `input.txt` file containing card data (located in `storage/` directory)
 
-## Project Structure
 
-.
-├── .gitignore
-├── composer.json
-├── init.php
-├── phpunit.xml
-├── README.md
-├── bin/
-│ ├── point.php
-│ └── reader.php
-├── evoluted/
-│ ├── Helper/
-│ │ ├── File.php
-│ │ ├── Json.php
-│ │ └── Publish.php
-│ └── Evoluted.php
-├── storage/
-│ └── input.txt
-├── tests/
-│ ├── Helper/
-│ │ └── Publish.php
-│ └── EvolutedTest.php
-└── Pest.php
 
 ## Installation
 
