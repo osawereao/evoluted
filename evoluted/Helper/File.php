@@ -20,4 +20,12 @@ final class File
 			Publish::error($error, $path);
 		}
 	}
+
+
+	// Read file lines, and return the data
+	public static function lines(string $filePath): array
+	{
+		// NOTE: Using this because the file has a SMALL DATASET
+		return file($filePath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+	}
 }
