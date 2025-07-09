@@ -1,5 +1,5 @@
 <?php
-namespace Tests\Helpers;
+namespace Tests\Helper;
 
 use Exception;
 
@@ -7,7 +7,7 @@ class PublishException extends Exception
 {
 }
 
-final class PublishMock
+final class Publish
 {
 	public static function error(string $message, string $hint = ''): void
 	{

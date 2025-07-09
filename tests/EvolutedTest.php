@@ -6,7 +6,7 @@ define('APP_ENV', 'testing');
 
 
 use Evoluted\Evoluted;
-use Tests\Helpers\PublishException;
+use Tests\Helper\PublishException;
 
 uses()->group('Evoluted');
 

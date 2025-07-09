@@ -18,7 +18,7 @@
 	"autoload": {
 		"psr-4": {
 			"Evoluted\\": "evoluted/",
-			"Tests\\Helpers\\": "tests/helpers/"
+			"Tests\\Helper\\": "tests/helper/"
 		}
 	},
 	"require-dev": {
