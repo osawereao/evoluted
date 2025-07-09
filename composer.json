@@ -1,0 +1,40 @@
+{
+	"name": "osawereao/evoluted",
+	"description": "Evoluted is a PHP CLI tool for parsing card game data and computing scores in the Evoluted technical test.",
+	"type": "project",
+	"license": "Apache-2.0",
+	"authors": [
+		{
+			"name": "Anthony Osawere | AO™",
+			"email": "anthony@osawere.com",
+			"homepage": "https://osawere.com",
+			"role": "Author"
+		}
+	],
+	"require": {
+		"php": "^8.4.10",
+		"symfony/console": "^7.3"
+	},
+	"autoload": {
+		"psr-4": {
+			"Evoluted\\": "evoluted/",
+			"Tests\\Helpers\\": "tests/helpers/"
+		}
+	},
+	"require-dev": {
+		"pestphp/pest": "^3.8"
+	},
+	"scripts": {
+		"test": "pest"
+	},
+	"config": {
+		"allow-plugins": {
+			"pestphp/pest-plugin": true
+		}
+	},
+	"extra": {
+		"pest": {
+			"bootstrap": "tests/Pest.php"
+		}
+	}
+}
